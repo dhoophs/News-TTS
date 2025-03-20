@@ -22,12 +22,50 @@
    cd News-TTS
 
 2. Create and activate a virtual environment:
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
-3. Install Dependencies:
+4. Install Dependencies:
+   ```bash
    pip install -r requirements.txt
 
-4. Download the en_core_web_sm model for topic extraction:
+6. Download the en_core_web_sm model for topic extraction:
+   ```bash
    python -m spacy download en_core_web_sm
-   
+
+---
+
+## Usage
+
+1. Run the FastAPI application:
+   ```bash
+   uvicorn api:app --reload
+
+2. Run Streamlit application
+   ```bash
+   streamlit run app.py
+
+---
+
+## File Structure
+
+   ```php
+   News-TTS/
+   ├── api.py                # Main FastAPI application
+   ├── utils.py              # Helper functions for API
+   ├── static/               # Directory for storing generated audio files
+   ├── requirements.txt      # List of dependencies
+   ├── README.md             # Project documentation
+   └── .gitignore            # Files to ignore in version control
+```
+---
+## Dependencies
+1. Python 3.7+
+2. FastAPI
+3. spaCy
+4. Hugging Face Transformers
+5. Requests
+6. Googletrans
+
+
