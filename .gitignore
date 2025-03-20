@@ -1,0 +1,32 @@
+# Python-related
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+*.so
+*.egg-info/
+
+# Environment-related
+.env
+venv/
+*.sqlite3
+
+# Logs
+*.log
+
+# FastAPI static files (optional, if auto-generated)
+static/
+
+# IDE and editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Generated translations or audio files
+*.wav
+*.mp3
+*.ogg
+
+# Windows files
+Thumbs.db

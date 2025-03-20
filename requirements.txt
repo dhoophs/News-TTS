@@ -1,0 +1,15 @@
+streamlit
+fastapi
+uvicorn
+bs4
+requests
+textblob
+gtts
+pydantic
+transformers
+beautifulsoup4
+torch
+torchvision
+torchaudio
+googletrans==4.0.0-rc1
+spacy
